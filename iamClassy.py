@@ -18,7 +18,7 @@ def euc(a,b):
 class classyKNN():
     #Classifier Methods
     def fit(self, X_train, y_train): 
-        self.X_train = X_train
+        self.X_train = X_train  
         self.y_train = y_train
     
     def predict(self, X_test):
@@ -56,4 +56,4 @@ my_classifier.fit(X_train, y_train)
 predictions = my_classifier.predict(X_test)
 
 from sklearn.metrics import accuracy_score
-print accuracy_score(y_test, predictions)
+print (accuracy_score(y_test, predictions))

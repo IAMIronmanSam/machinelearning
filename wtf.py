@@ -39,10 +39,10 @@ test_data = iris.data[test_idx]
 clf = tree.DecisionTreeClassifier()
 clf.fit(train_data,train_target)
 
-print test_target
-print "========================="
-print clf.predict(test_data)
-print "========================="
+print (test_target)
+print ("=========================")
+print (clf.predict(test_data))
+print ("=========================")
 #Visualization
 #==============================================================================
 #from sklearn.externals.six import StringIO
@@ -57,6 +57,6 @@ print "========================="
 # graph = pydot.graph_from_dot_data(dot_data.getvalue())
 # graph.write_pdf("iris.pdf")
 #==============================================================================
-print test_data[2], test_target[2]
+print (test_data[2], test_target[2])
 
-print iris.feature_names, iris.target_names
+print (iris.feature_names, iris.target_names)
